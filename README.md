@@ -18,5 +18,11 @@ The purpose of this project is to build a supervised machine learning model whic
 ![SMOTEENN](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/SMOTEENN.png)
 
 * The following classification report shows the results of the Balanced Random Forest Classifier which takes the minority target class and adds subsets of the majority class. This process is recreated for each decision tree. The results, as shown below, have a much higher accuracy score at 79% and the precision and recall both being higher, which means that the model was able to accurately predict the target classes.
-* ![balanced_random_forest_classifier](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/balanced_random_forest_classifier.png)
+![balanced_random_forest_classifier](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/balanced_random_forest_classifier.png)
+
+* The final result is the Easy Ensemble AdaBoost Classifier. The Easy Ensemble AdaBoost Classifier is similar to the Balanced Random Forest Classifier except this is a booster so each tree learns from the previous tree. The results show us that this method is very reliable with a 93% accuracy score and a very high recall and precision rates. The model only predicted 8 of the class 0 values and a small percentage of the class 1 values wrong. 
+![easy_ensemble_adaboost_classifier](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/easy_ensemble_adaboost_classifier.png)
+
+## Summary
+To summarize the results, the balance models that were used to fix the imbalances in the target classes did not reliably predict the results. All three had an accuracy score between 54-65% and low precision/recall rates. On the other hand, the ensemble classifiers had high accuracy scores and precision/recall rates with the Easy Ensemble AdaBoost Classifier having a 93% accuracy score. In order to get more adequate results, we may have to test the ensemble models on further data to ensure accuracy. For an immediate recommendation, I would propose the Easy Ensemble AdaBoost Classifier, as the statistics of this model show us the accurate predictions it is able to make.
  
