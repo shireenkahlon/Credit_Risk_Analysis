@@ -11,10 +11,12 @@ The purpose of this project is to build a supervised machine learning model whic
 * The next model to examine is the SMOTE model which synthetically adds data points to the minority class to balance the minority and majority target classes. The accuracy score in the SMOTE model is 65% — which is a moderately high accuracy score. The precision and recall, as seen below, shows us that the model made some accurate predictions but not enough to rely on when separating the bad applications.
 ![SMOTE](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/SMOTE.png)
 
-
 * The following model is the undersampling method; this method resamples data by removing data points from the majority group to level it with the minority group. The model will be trained with this resampled data and tested with our original data. From this resampling method and model, we can see that the accuracy score is 54% — lower than the oversampling and SMOTE models. In addition, the recall is relatively low considering the actual results for the class 1 did not match with the predictions made. The 0.1 precision score shows us that the model was not able to accurately predict the results for class 0. The model predicted the class 1 values almost perfectly.
 ![undersampling](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/undersampling.png)
 
 * The model shown below is the SMOTEENN model which combines undersampling and oversampling. The accuracy score is 64% — this score is moderately high. The recall for class 1 shows us that the actual results and the predicted results did not match up. As seen below and in the previous models, the SMOTEENN model was not able to accurately predict class 0’s but did well in predicting class 1’s.
 ![SMOTEENN](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/SMOTEENN.png)
+
+* The following classification report shows the results of the Balanced Random Forest Classifier which takes the minority target class and adds subsets of the majority class. This process is recreated for each decision tree. The results, as shown below, have a much higher accuracy score at 79% and the precision and recall both being higher, which means that the model was able to accurately predict the target classes.
+* ![balanced_random_forest_classifier](https://github.com/shireenkahlon/Credit_Risk_Analysis/blob/main/screenshots/balanced_random_forest_classifier.png)
  
